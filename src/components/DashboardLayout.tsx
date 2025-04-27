@@ -6,9 +6,9 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <Authenticated>
       <div className="h-screen flex">
-        {/* <Navigation /> */}
+        <Navigation />
         <main className="flex-1 overflow-auto">
-          <div className="p-8">
+          <div className="flex justify-center items-center">
             {children}
           </div>
         </main>

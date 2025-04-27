@@ -10,6 +10,7 @@ import NeuronlinePlatform from "./components/dash";
 import Progress from "./components/Progress";
 import Neurotest from "./components/neurotest";
 import WorkoutLibrary from "./components/VideoStore"
+import Profile from "./components/Profile";
 
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       <Authenticated>
         <WorkoutLibrary />
         <Neurotest />
+        <Profile />
         <Progress />
         <NeuronlinePlatform />
        < FitnessPlanDemo />

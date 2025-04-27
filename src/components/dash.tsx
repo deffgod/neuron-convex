@@ -5,6 +5,10 @@ import {
   User, Bell, Home, Search, Heart, BookOpen, ArrowLeft, X, CheckCircle,
   BarChart2, Timer, Target, Video, Camera, Mail, Lock, ChevronDown
 } from 'lucide-react';
+import WorkoutLibrary from './VideoStore';
+import Neurotest from './neurotest';
+import Progress from './Progress';
+import UserProfile from './Profile';
 
 // Core colors from the implementation document
 const colors = {
@@ -1049,15 +1053,9 @@ const NeuronlinePlatform = () => {
           exit="exit"
         >
           {activeTab === 'home' && <HomeScreen />}
-          {activeTab === 'workouts' && (
-            <div className="p-6 text-white">Workouts Screen</div>
-          )}
-          {activeTab === 'neuro' && (
-            <div className="p-6 text-white">Neuro Screen</div>
-          )}
-          {activeTab === 'progress' && (
-            <div className="p-6 text-white">Progress Screen</div>
-          )}
+          {activeTab === 'workouts' && <WorkoutLibrary />}
+          {activeTab === 'neuro' && <Neurotest />}
+          {activeTab === 'progress' && <Progress />}
           {activeTab === 'profile' && (
             <div className="p-6 text-white">Profile Screen</div>
           )}
